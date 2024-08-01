@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f3307328d16a44b7ca6c321558af8, type: 3}
+  m_Name: PyramidHowToPlayDataContainer
+  m_EditorClassIdentifier: 
+  Pages:
+  - Preview: {fileID: 21300000, guid: bb380be393fcaaa4d8dcd9dd8c556beb, type: 3}
+    Text: 'OVERVIEW:
+
+
+      THE GOAL OF PYRAMID IS TO CLEAR ALL CARDS FROM THE BOARD
+      BY MAKING MATCHES THAT ADD UP TO 13.'
+  - Preview: {fileID: 21300000, guid: b0e82d85be31d0a4090b2315eb2a610a, type: 3}
+    Text: 'MAKING MATCHES:
+
+
+      CLICK TWO CARDS TO MAKE A MATCH. LOOK FOR THESE
+      MATCHES: [K] [Q,A] [J, 2] [10, 3] [9, 4] [8, 5] [7, 6]
+
+      WHEN YOU COMPLETE
+      A MATCH IT IS AUTOMATICALLY CLEARED FROM THE BOARD.'
+  - Preview: {fileID: 21300000, guid: 6d81b189d80a7cb40b59e15f13077e5d, type: 3}
+    Text: 'PLAYING KINGS:
+
+
+      THE KING EQUALS 13 SO IT IS THE ONLY CARD THAT
+      IS PLAYED BY ITSELF. CLICK A KING TO CLEAR IT FROM THE BOARD.'
+  - Preview: {fileID: 21300000, guid: 889c010dbe40d0b469bd271d584418de, type: 3}
+    Text: 'STOCK PILE:
+
+
+      CLICK THE DRAW BUTTON OR PRESS TO PACK PILE TO DRAW
+      A NEW CARD. (THE LAST ONE MAY MATCHES WITH CARD ON THE WASTE PILE).'
+  - Preview: {fileID: 21300000, guid: 1803bc9b0452cd54c817eee2c6c84123, type: 3}
+    Text: 'DIFFERENT LAYOUTS:
+
+
+      YOU CAN PLAY DIFFERENT LAYOUT DURING THE PYRAMID
+      SOLITAIRE LOGIC.'
+  - Preview: {fileID: 21300000, guid: 38711b83436d62a4ea3147533497ade5, type: 3}
+    Text: 'ACTION BAR:
+
+
+      TAP ON ANY OPEN SPACE TO OPEN/CLOSE THE ACTION BAR.
+      FROM THIS BAR YOU CAN CREATE NEW/REPLAY CURRENT GAME, CHOOSE VISUAL, ACTIVATE
+      HINTS, UNDO YOUR MOVES OR DISABLE ADS.'

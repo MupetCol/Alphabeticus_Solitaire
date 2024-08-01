@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f3307328d16a44b7ca6c321558af8, type: 3}
+  m_Name: SpiderHowToPlayDataContainer
+  m_EditorClassIdentifier: 
+  Pages:
+  - Preview: {fileID: 21300000, guid: cb3378775de5f4242b69a7be456914ea, type: 3}
+    Text: 'OBJECTIVE:
+
+
+      THE GOAL OF SPIDER IS TO CREATE EIGHT STACKS OF CARDS
+      IN DESCENDING ORDER FROM KING TO ACE.'
+  - Preview: {fileID: 21300000, guid: ca4d71ebe487f9a46878dad6ecb993f4, type: 3}
+    Text: 'CREATING STACKS:
+
+
+      TO CREATE A STACK, COMPLETE A SEQUENCE OF CARDS
+      IN A SINGLE SUIT FROM KING TO ACE. (K, Q,J, 10, 9, 8, 7, 6, 5, 4, 3, 2, A.)
+
+      COMPLETED
+      STACKS ARE AUTOMATICALLY REMOVED FROM THE BOARD.'
+  - Preview: {fileID: 21300000, guid: bde3e56d64e973a45ba3a505cc7fbf6f, type: 3}
+    Text: 'COLUMNS:
+
+
+      MOVE CARDS BETWEEN COLUMNS TO CREATE STACKS OF CARDS
+      AND UNCOVER FACE-DOWN CARDS. STACKS MUST BE IN DESCENDING ORDER: K, Q,J, 10,
+      9, 8, 7, 6, 5, 4, 3, 2, A.
+
+
+      TO MOVE MULTIPLE CARDS AT ONCE, CARDS MUST
+      BE OF THE SAME SUIT.'
+  - Preview: {fileID: 21300000, guid: 2c9d7f3db3d49904cbeb65b5012c4d45, type: 3}
+    Text: 'EMPTY COLUMNS:
+
+
+      EMPTY COLUMNS ARE CREATED WHEN YOU MOVE THE LAST
+      CARD FROM A COLUMN.
+
+
+      ANY SINGLE CARD OR STACK OF CARDS MAY BE MOVED
+      TO AN EMPTY COLUMN.'
+  - Preview: {fileID: 21300000, guid: 99f0ee5763ecfb142b234eedad96e945, type: 3}
+    Text: 'STOCK PILE:
+
+
+      USE THE STOCK PILE TO DRAW A NEW ROW OF CARDS.
+
+
+      NOTE:
+      YOU CAN''T DRAW NEW CARDS WHILE THERE ARE EMPTY COLUMNS.'
+  - Preview: {fileID: 21300000, guid: 2aa56c81ea23af543ade29da4880c315, type: 3}
+    Text: 'ACTION BAR:
+
+
+      TAP ON ANY OPEN SPACE TO OPEN/CLOSE THE ACTION BAR.
+      FROM THIS BAR YOU CAN CREATE NEW/REPLAY CURRENT GAME, CHOOSE VISUAL, ACTIVATE
+      HINTS, UNDO YOUR MOVES OR DISABLE ADS.'

@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad85448f447d40269863a87886f94b17, type: 3}
+  m_Name: BaseVisualContainerData
+  m_EditorClassIdentifier: 
+  IsAutoNameValidationEnabled: 1
+  BackgroundVisual:
+    Prefab: {fileID: 3847578657524368078, guid: 5c45409457934f941bee225480453ea4,
+      type: 3}
+    Content:
+    - IsDefault: 0
+      Name: BrownBG
+      Preview: {fileID: 21300000, guid: b2b3abc43d755b54eac565361816a7fb, type: 3}
+    - IsDefault: 1
+      Name: DefaultBG
+      Preview: {fileID: 21300000, guid: 947c9653fd856404f80f4bc8e395d9ef, type: 3}
+    - IsDefault: 0
+      Name: GreenBG
+      Preview: {fileID: 21300000, guid: 6cee7d0fb05f56945964cd61be98e744, type: 3}
+    - IsDefault: 0
+      Name: GreenNewBG
+      Preview: {fileID: 21300000, guid: 938af4f475830d9478f9012e5e87f2f0, type: 3}
+    - IsDefault: 0
+      Name: LightRedBG
+      Preview: {fileID: 21300000, guid: 0e8d7b9f4c51c3e45935f6fec3d22525, type: 3}
+    - IsDefault: 0
+      Name: PurpleBG
+      Preview: {fileID: 21300000, guid: 65f68784104fc9c43bfa03e8fd387475, type: 3}
+    - IsDefault: 0
+      Name: RedBG
+      Preview: {fileID: 21300000, guid: f754518ec40e82c4eb87b486db9d47ec, type: 3}
+    - IsDefault: 0
+      Name: Wood2BG
+      Preview: {fileID: 21300000, guid: 562a4b0e48a5d8b4987e249f9f8e951e, type: 3}
+    - IsDefault: 0
+      Name: WoodBG
+      Preview: {fileID: 21300000, guid: 695b9ea7f1ecd9f459b5c848792f33a2, type: 3}
+    SaveName: CurrentBackground
+  CardBackVisual:
+    Prefab: {fileID: 3067643622769435766, guid: 260e41c96b54a624b93a93a93e01bdab,
+      type: 3}
+    Content:
+    - IsDefault: 1
+      Name: Shirt9
+      Preview: {fileID: 21300000, guid: f1045067fcfc8f74b87f76e4d14943ed, type: 3}
+    - IsDefault: 0
+      Name: FishShirt
+      Preview: {fileID: 21300000, guid: 98bc5e1c19095b04c9b3d7106a1fd45a, type: 3}
+    - IsDefault: 0
+      Name: RobotShirt
+      Preview: {fileID: 21300000, guid: 28c8ba5e44367594d868bea85049d3f2, type: 3}
+    - IsDefault: 0
+      Name: Shirt12
+      Preview: {fileID: 21300000, guid: 5a01c9644c0fe9f4e9e4671ae223bc3f, type: 3}
+    - IsDefault: 0
+      Name: CastleShirt
+      Preview: {fileID: 21300000, guid: 35cffe0ee9b06904abe139e9c705de29, type: 3}
+    - IsDefault: 0
+      Name: Shirt4
+      Preview: {fileID: 21300000, guid: aea55cbcf0051de4fb27810f240ad32a, type: 3}
+    - IsDefault: 0
+      Name: Shirt3
+      Preview: {fileID: 21300000, guid: 8a0fe9f0ea1dfc545bdf44e7932aa6dd, type: 3}
+    - IsDefault: 0
+      Name: Shirt7
+      Preview: {fileID: 21300000, guid: 134fa7e0f804c5e47b9ec728eccd4c0f, type: 3}
+    - IsDefault: 0
+      Name: DefaultShirt
+      Preview: {fileID: 21300000, guid: c7dd350fd48415e4da44dc45c3044a3f, type: 3}
+    - IsDefault: 0
+      Name: Shirt13
+      Preview: {fileID: 21300000, guid: 4b8c94f5681577046acb379f841ed898, type: 3}
+    - IsDefault: 0
+      Name: Shirt11
+      Preview: {fileID: 21300000, guid: 7e1aff10701573b4192995424166e4f9, type: 3}
+    - IsDefault: 0
+      Name: Shirt10
+      Preview: {fileID: 21300000, guid: 89a64d56c19d7ce4d8fb431c56143b0b, type: 3}
+    - IsDefault: 0
+      Name: Shirt1
+      Preview: {fileID: 21300000, guid: b32231c59a797064a98d105e4c949fce, type: 3}
+    - IsDefault: 0
+      Name: HornShirt
+      Preview: {fileID: 21300000, guid: 23c302d72939d1f408660caaa67b5175, type: 3}
+    - IsDefault: 0
+      Name: Shirt14
+      Preview: {fileID: 21300000, guid: df9bda2150837dd44bae460f02b680bf, type: 3}
+    - IsDefault: 0
+      Name: PalmsShirt
+      Preview: {fileID: 21300000, guid: 1298a27c7f6f7f14abcc18dc8f5d7da8, type: 3}
+    - IsDefault: 0
+      Name: HandShirt
+      Preview: {fileID: 21300000, guid: 3bb2da33c706496429b23bc57a606ec3, type: 3}
+    - IsDefault: 0
+      Name: Shirt6
+      Preview: {fileID: 21300000, guid: 0b21d8ed69745604c8925bf7e3f3bc22, type: 3}
+    - IsDefault: 0
+      Name: Shirt5
+      Preview: {fileID: 21300000, guid: 645ff5c6aba52ec4da930ff3543fab12, type: 3}
+    - IsDefault: 0
+      Name: Shirt8
+      Preview: {fileID: 21300000, guid: 0ee1ac2223df37440a3de522b331f47d, type: 3}
+    - IsDefault: 0
+      Name: Shirt2
+      Preview: {fileID: 21300000, guid: e61edb81423dee64eb628f8d23a2b3bc, type: 3}
+    SaveName: CurrentBack
+  CardFrontVisual:
+    Prefab: {fileID: 6218468652834137081, guid: 82c4ab6c3522d1344ac8e728a153d2f1,
+      type: 3}
+    Content:
+    - IsDefault: 1
+      Name: Front1
+      Preview: {fileID: 21300000, guid: 94f3e115b8b4ed8409523f6c9d557be5, type: 3}
+    - IsDefault: 0
+      Name: Front2
+      Preview: {fileID: 21300000, guid: b297a0545e088764b98743c4ec49cbdb, type: 3}
+    - IsDefault: 0
+      Name: Front3
+      Preview: {fileID: 21300000, guid: a396291b814cf884c8c2ebb22b136892, type: 3}
+    - IsDefault: 0
+      Name: Front4
+      Preview: {fileID: 21300000, guid: 3000de27f5b3df14db7b92e78b59e3a0, type: 3}
+    SaveName: CurrentFront

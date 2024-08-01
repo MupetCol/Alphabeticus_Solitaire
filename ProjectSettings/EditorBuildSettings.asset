@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/SimpleSolitaire/Resources/Scenes/GameScene_Klondike(UndoCountable).unity
+    guid: 873d43b8e8d58f3428fad46c15e00341
   m_configObjects: {}

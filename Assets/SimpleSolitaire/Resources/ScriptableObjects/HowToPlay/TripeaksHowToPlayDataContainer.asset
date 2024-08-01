@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f3307328d16a44b7ca6c321558af8, type: 3}
+  m_Name: TripeaksHowToPlayDataContainer
+  m_EditorClassIdentifier: 
+  Pages:
+  - Preview: {fileID: 21300000, guid: 48cb00c5062be4a429635e1c948df322, type: 3}
+    Text: 'OVERVIEW:
+
+
+      THE GOAL OF TRIPEAKS IS TO CLEAR THE BOARD BY PLAYING
+      CARDS THAT ARE ONE ABOVE OR BELOW THE WASTE CARD VALUE.'
+  - Preview: {fileID: 21300000, guid: 886c8a09650ac47429398beea19fcd7f, type: 3}
+    Text: 'WASTE PILE VALUE:
+
+
+      TO MOVE CARDS TO THE WASTE PILE, CLICK/DRAG
+      A FACE-UP CARD THAT IS ONE ABOVE OR BELOW THE CURRENT VALUE OF THE WASTE PILE
+      CARD. EXAMPLE: IF THE WASTE CARD VALUE IS A 2, YOU MUST CLICK/DRAG A ''A''
+      OR ''3''.'
+  - Preview: {fileID: 21300000, guid: 0559b7b830edd5245915b4246e7f83a1, type: 3}
+    Text: 'STOCK PILE:
+
+
+      CLICK THE STOCK PILE TO DRAW A NEW CARD. THIS CHANGES
+      THE WASTE PILE VALUE.'
+  - Preview: {fileID: 21300000, guid: ac68cfdc87d6a36428170ba747cb85cd, type: 3}
+    Text: 'DIFFERENT LAYOUTS:
+
+
+      YOU CAN PLAY DIFFERENT LAYOUT DURING THE TRIPEAKS
+      SOLITAIRE LOGIC.'
+  - Preview: {fileID: 21300000, guid: ceb32402f6dda3048b3b1d4ddc052cfa, type: 3}
+    Text: 'ACTION BAR:
+
+
+      TAP ON ANY OPEN SPACE TO OPEN/CLOSE THE ACTION BAR.
+      FROM THIS BAR YOU CAN CREATE NEW/REPLAY CURRENT GAME, CHOOSE VISUAL, ACTIVATE
+      HINTS, UNDO YOUR MOVES OR DISABLE ADS.'

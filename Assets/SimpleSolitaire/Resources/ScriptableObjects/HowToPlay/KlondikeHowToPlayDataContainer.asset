@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f3307328d16a44b7ca6c321558af8, type: 3}
+  m_Name: KlondikeHowToPlayDataContainer
+  m_EditorClassIdentifier: 
+  Pages:
+  - Preview: {fileID: 21300000, guid: 5f9e02694ca9c9a4ca82c2e85b4288a2, type: 3}
+    Text: 'OVERVIEW:
+
+
+      IN KLONDIKE, THE GOAL IS TO CREATE A STACK OF CARDS
+      FROM LOW TO HIGH IN EACH OF THE FOUR FOUNDATION PILES IN THE UPPER-LEFT CORNER.
+      EACH PILE CAN CONTAIN ONLY ONE SUIT.'
+  - Preview: {fileID: 21300000, guid: cb24fc49302e2824eb89d2447d2aa26e, type: 3}
+    Text: 'FOUNDATION PILES:
+
+
+      IN KLONDIKE, ACES ARE LOW AND KINGS ARE HIGH.
+      THE FOUR FOUNDATION PILES MUST BEGIN WITH ACES AND END WITH KINGS.'
+  - Preview: {fileID: 21300000, guid: c42ccdedc9403494e8c3ee604c02d5f8, type: 3}
+    Text: 'COLUMNS:
+
+
+      CARDS IN COLUMNS MUST BE PLACED IN DESCENDING ORDER AND
+      MUST ALTERNATE BETWEEN RED AND BLACK. YOU CAN PUT A BLACK 7 ON A RED 8, FOR
+      EXAMPLE.'
+  - Preview: {fileID: 21300000, guid: 684646767eaebd645a410b2a749a2cb5, type: 3}
+    Text: 'RUNS:
+
+
+      YOU CAN ALSO MOVE SEQUENTIAL RUNS OF CARDS BETWEEN COLUMNS.
+      JUST TAP THE DEEPEST CARD IN THE RUN AND DRAG THEM ALL TO ANOTHER COLUMN.'
+  - Preview: {fileID: 21300000, guid: 817c2a0ab8ad24c4eaccd7ceba009add, type: 3}
+    Text: 'EMPTY COLUMNS:
+
+
+      IF YOU EVER HAVE AN EMPTY COLUMN, YOU CAN PLACE
+      A KING THERE OR ANY SEQUENTIAL STACK WITH A KING AS ITS HEAD.'
+  - Preview: {fileID: 21300000, guid: 671ec8ef85101464fa33b412bb53b88b, type: 3}
+    Text: 'MOVING CARDS:
+
+
+      TAP AND DRAG A CARD OR STACK TO MOVE IT. YOU CAN
+      MOVE A CARD TO THE FOUNDATION PILE EITHER BY DRAGGING IT OR BY TAPPING IT ONCE'
+  - Preview: {fileID: 21300000, guid: 266fa29f2bef45441a6149033f08f6a2, type: 3}
+    Text: 'ACTION BAR:
+
+
+      TAP ON ANY OPEN SPACE TO OPEN/CLOSE THE ACTION BAR.
+      FROM THIS BAR YOU CAN CREATE NEW/REPLAY CURRENT GAME, CHOOSE VISUAL, ACTIVATE
+      HINTS, UNDO YOUR MOVES OR DISABLE ADS.'
