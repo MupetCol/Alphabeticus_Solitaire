@@ -163,28 +163,28 @@ namespace SimpleSolitaire.Controller
 
         public void SetHandOrientation()
         {
-            DeckElements.ForEach(x =>
-            {
-                switch (Orientation)
-                {
-                    case HandOrientation.LEFT:
-                        x.RectRoot.anchorMin = x.LeftTransformRef.anchorMin;
-                        x.RectRoot.anchorMax = x.LeftTransformRef.anchorMax;
-                        x.RectRoot.pivot = x.LeftTransformRef.pivot;
-                        x.RectRoot.localScale = x.LeftTransformRef.localScale;
-                        x.RectRoot.anchoredPosition = x.LeftTransformRef.anchoredPosition;
-                        x.RectRoot.sizeDelta = x.LeftTransformRef.sizeDelta;
-                        break;
-                    case HandOrientation.RIGHT:
-                        x.RectRoot.anchorMin = x.RightTransformRef.anchorMin;
-                        x.RectRoot.anchorMax = x.RightTransformRef.anchorMax;
-                        x.RectRoot.pivot = x.RightTransformRef.pivot;
-                        x.RectRoot.localScale = x.RightTransformRef.localScale;
-                        x.RectRoot.anchoredPosition = x.RightTransformRef.anchoredPosition;
-                        x.RectRoot.sizeDelta = x.RightTransformRef.sizeDelta;
-                        break;
-                }
-            });
+            //DeckElements.ForEach(x =>
+            //{
+            //    switch (Orientation)
+            //    {
+            //        case HandOrientation.LEFT:
+            //            x.RectRoot.anchorMin = x.LeftTransformRef.anchorMin;
+            //            x.RectRoot.anchorMax = x.LeftTransformRef.anchorMax;
+            //            x.RectRoot.pivot = x.LeftTransformRef.pivot;
+            //            x.RectRoot.localScale = x.LeftTransformRef.localScale;
+            //            x.RectRoot.anchoredPosition = x.LeftTransformRef.anchoredPosition;
+            //            x.RectRoot.sizeDelta = x.LeftTransformRef.sizeDelta;
+            //            break;
+            //        case HandOrientation.RIGHT:
+            //            x.RectRoot.anchorMin = x.RightTransformRef.anchorMin;
+            //            x.RectRoot.anchorMax = x.RightTransformRef.anchorMax;
+            //            x.RectRoot.pivot = x.RightTransformRef.pivot;
+            //            x.RectRoot.localScale = x.RightTransformRef.localScale;
+            //            x.RectRoot.anchoredPosition = x.RightTransformRef.anchoredPosition;
+            //            x.RectRoot.sizeDelta = x.RightTransformRef.sizeDelta;
+            //            break;
+            //    }
+            //});
 
             for (int i = 0; i < AllDeckArray.Length; i++)
             {
