@@ -362,13 +362,13 @@ namespace SimpleSolitaire.Controller
 
             if (_isHandeldAction)
             {
-#if UNITY_IPHONE
-                Handheld.SetActivityIndicatorStyle(UnityEngine.iOS.ActivityIndicatorStyle.Gray);
-#elif UNITY_ANDROID
-                Handheld.SetActivityIndicatorStyle(AndroidActivityIndicatorStyle.Small);
-#elif !UNITY_STANDALONE
-                Handheld.StartActivityIndicator();
-#endif
+//#if UNITY_IPHONE
+//                Handheld.SetActivityIndicatorStyle(UnityEngine.iOS.ActivityIndicatorStyle.Gray);
+//#elif UNITY_ANDROID
+//                Handheld.SetActivityIndicatorStyle(AndroidActivityIndicatorStyle.Small);
+//#elif !UNITY_STANDALONE
+//                Handheld.StartActivityIndicator();
+//#endif
             }
 
             yield return new WaitUntil(() => _isTestADS
@@ -378,7 +378,7 @@ namespace SimpleSolitaire.Controller
             if (_isHandeldAction)
             {
 #if !UNITY_STANDALONE                  
-                Handheld.StopActivityIndicator();
+                //Handheld.StopActivityIndicator();
 #endif
             }
 
