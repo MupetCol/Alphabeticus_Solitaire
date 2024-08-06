@@ -37,8 +37,8 @@ namespace SimpleSolitaire.Controller
                         {
                             if (i == 1)
                             {
-                                card.gameObject.transform.position = gameObject.transform.position +
-                                                                     new Vector3(wasteHorizontalSpace, 0, 0);
+                                card.gameObject.transform.position = gameObject.transform.position -
+                                                                     new Vector3(0, wasteHorizontalSpace, 0);
                                 card.IsDraggable = true;
                             }
                         }
@@ -46,14 +46,14 @@ namespace SimpleSolitaire.Controller
                         {
                             if (i == CardsArray.Count - 1)
                             {
-                                card.gameObject.transform.position = gameObject.transform.position +
-                                                                     new Vector3(2 * wasteHorizontalSpace, 0, 0);
+                                card.gameObject.transform.position = gameObject.transform.position -
+                                                                     new Vector3(0, 2 * wasteHorizontalSpace, 0);
                                 card.IsDraggable = true;
                             }
                             else if (i == CardsArray.Count - 2)
                             {
-                                card.gameObject.transform.position = gameObject.transform.position +
-                                                                     new Vector3(wasteHorizontalSpace, 0, 0);
+                                card.gameObject.transform.position = gameObject.transform.position -
+                                                                     new Vector3(0, wasteHorizontalSpace, 0);
                             }
                         }
                     }

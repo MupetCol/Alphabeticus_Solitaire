@@ -163,6 +163,7 @@ namespace SimpleSolitaire.Controller
 
         public void SetHandOrientation()
         {
+            //DISABLED AS WE DON'T NEED THE RIGHT/LEFT HAND LOGIC, FOR EASIER LAYOUR ITERATION TOO
             //DeckElements.ForEach(x =>
             //{
             //    switch (Orientation)
