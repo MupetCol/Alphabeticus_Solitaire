@@ -181,7 +181,6 @@ MonoBehaviour:
   CheckMark: {fileID: 3067643623522406410}
   Anim: {fileID: 3067643622769435786}
   Btn: {fileID: 3067643622769435765}
-  ElementName: 
 --- !u!1 &3067643623522406408
 GameObject:
   m_ObjectHideFlags: 0
