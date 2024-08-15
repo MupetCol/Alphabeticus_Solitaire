@@ -115,9 +115,9 @@ namespace SimpleSolitaire.Controller
         {
             base.InitializeSpacesDictionary();
 
-            SpacesDict.Add(DeckSpacesTypes.DECK_SPACE_VERTICAL_BOTTOM_OPENED, DeckHeight / 3.5f);
+            SpacesDict.Add(DeckSpacesTypes.DECK_SPACE_VERTICAL_BOTTOM_OPENED, DeckHeight / 3.5f / 1.8f);
             SpacesDict.Add(DeckSpacesTypes.DECK_SPACE_VERTICAL_BOTTOM_CLOSED, DeckHeight / 3.5f / 2);
-            SpacesDict.Add(DeckSpacesTypes.DECK_SPACE_HORIONTAL_WASTE, DeckWidth / 2.3f);
+            SpacesDict.Add(DeckSpacesTypes.DECK_SPACE_HORIONTAL_WASTE, DeckHeight / 3.5f / 1.8f);
         }
 
         public override void SubscribeEvents()
