@@ -61,7 +61,7 @@ namespace SimpleSolitaire.Controller
             {
                 if (data.HintButtonPressed)
                 {
-                    _adsManager.TryShowIntersitialByCounter();
+                    //_adsManager.TryShowIntersitialByCounter();
                     
                     AudioController audioCtrl = AudioController.Instance;
 
