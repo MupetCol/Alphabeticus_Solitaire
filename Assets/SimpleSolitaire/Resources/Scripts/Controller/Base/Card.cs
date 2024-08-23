@@ -4,12 +4,15 @@ using SimpleSolitaire.Model.Config;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 namespace SimpleSolitaire.Controller
 {
     public abstract class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
     {
-        public int CardType = 0;
+		[SerializeField] private TMP_Text numberText;
+
+		public int CardType = 0;
         public int CardNumber = 0;
         public int Number = 0;
         public int CardStatus = 0;
@@ -172,7 +175,18 @@ namespace SimpleSolitaire.Controller
         {
             var visualData = CardLogicComponent.CardShirtComponent.CurrentInfo;
 
-            return CardStatus == 0
+			numberText.text = Number.ToString();
+
+			if (CardStatus == 0)
+			{
+				numberText.gameObject.SetActive(false);
+			}
+			else
+			{
+				numberText.gameObject.SetActive(true);
+			}
+
+			return CardStatus == 0
                 ? $"{Public.PATH_TO_CARD_BACKS_IN_RESOURCES}{visualData.CardBack}"
                 : $"{Public.PATH_TO_CARD_FRONTS_IN_RESOURCES}{visualData.CardFront}/{GetTypeName()}{Number}";
         }

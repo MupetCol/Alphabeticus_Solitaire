@@ -1,10 +1,13 @@
 ﻿using SimpleSolitaire.Model.Config;
+using TMPro;
 using UnityEngine;
 
 namespace SimpleSolitaire.Controller
 {
     public class KlondikeCard : Card
     {
+     
+
         /// <summary>
         /// Initialize card by number.
         /// </summary>
