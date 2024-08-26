@@ -1201,8 +1201,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -1.8532, y: -0}
+  m_SizeDelta: {x: -11.115, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &150709607
 PrefabInstance:
@@ -3974,8 +3974,8 @@ MonoBehaviour:
   CardShirtComponent: {fileID: 651396522}
   ParticleStars: {fileID: 682057840}
   CurrentRule: 0
-  CurrentDifficultyType: 0
-  DifficultyReplaceAmount: 60
+  CurrentDifficultyType: 1
+  DifficultyReplaceAmount: 30
   _oneDrawRuleToggle: {fileID: 1294817996}
   _threeDrawRuleToggle: {fileID: 1204108703}
 --- !u!1 &411655881
@@ -6144,7 +6144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.043137256, g: 0.3921569, b: 0.09411766, a: 0.39215687}
+  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11814,7 +11814,7 @@ PrefabInstance:
     - target: {fileID: 8251648125145895924, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16344,7 +16344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2627451, g: 0.6901961, b: 0.24705884, a: 1}
+  m_Color: {r: 0.05380029, g: 0.2924528, b: 0.08502833, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

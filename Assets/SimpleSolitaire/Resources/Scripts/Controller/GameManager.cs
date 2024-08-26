@@ -344,7 +344,7 @@ namespace SimpleSolitaire.Controller
             _statisticsComponent.SetBestWinTime(_timeCount);
             _statisticsComponent.SetBestWinMoves(_stepCount);
 
-            _interVideoAdsComponent.ShowInterstitial();
+            //_interVideoAdsComponent.ShowInterstitial();
         }
 
         /// <summary>
@@ -654,7 +654,7 @@ namespace SimpleSolitaire.Controller
         /// </summary>
         public void OnClickSettingBtn()
         {
-            _cardLayer.SetActive(false);
+            //_cardLayer.SetActive(false);
             _settingLayer.SetActive(true);
             AppearWindow(_settingLayer);
         }

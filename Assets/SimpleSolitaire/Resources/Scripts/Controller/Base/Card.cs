@@ -177,16 +177,16 @@ namespace SimpleSolitaire.Controller
 
 			numberText.text = Number.ToString();
 
-			if (CardStatus == 0)
-			{
-				numberText.gameObject.SetActive(false);
-			}
-			else
-			{
-				numberText.gameObject.SetActive(true);
-			}
+            //if (CardStatus == 0)
+            //{
+            //	numberText.gameObject.SetActive(false);
+            //}
+            //else
+            //{
+            numberText.gameObject.SetActive(false);
+            //}
 
-			return CardStatus == 0
+            return CardStatus == 0
                 ? $"{Public.PATH_TO_CARD_BACKS_IN_RESOURCES}{visualData.CardBack}"
                 : $"{Public.PATH_TO_CARD_FRONTS_IN_RESOURCES}{visualData.CardFront}/{GetTypeName()}{Number}";
         }

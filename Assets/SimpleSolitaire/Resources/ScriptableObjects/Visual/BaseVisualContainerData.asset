@@ -120,19 +120,10 @@ MonoBehaviour:
     Prefab: {fileID: 6218468652834137081, guid: 82c4ab6c3522d1344ac8e728a153d2f1,
       type: 3}
     Content:
-    - Name: CustomFront
+    - Name: CustomFrontYZ
       Preview: {fileID: 21300000, guid: 0590295801f8a7249b8a18e956739e51, type: 3}
       IsDefault: 1
-    - Name: Front1
-      Preview: {fileID: 21300000, guid: 94f3e115b8b4ed8409523f6c9d557be5, type: 3}
-      IsDefault: 0
-    - Name: Front2
-      Preview: {fileID: 21300000, guid: b297a0545e088764b98743c4ec49cbdb, type: 3}
-      IsDefault: 0
-    - Name: Front3
-      Preview: {fileID: 21300000, guid: a396291b814cf884c8c2ebb22b136892, type: 3}
-      IsDefault: 0
-    - Name: Front4
-      Preview: {fileID: 21300000, guid: 3000de27f5b3df14db7b92e78b59e3a0, type: 3}
+    - Name: CustomFrontAB
+      Preview: {fileID: 1577148531, guid: 648bd748a7445db4eb2a0a87718cef5e, type: 3}
       IsDefault: 0
     SaveName: CurrentFront
