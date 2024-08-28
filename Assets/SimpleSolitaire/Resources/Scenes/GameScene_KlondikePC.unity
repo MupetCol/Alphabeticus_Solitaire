@@ -3427,7 +3427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29862a0f2802447380d753d13c215e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 11400000, guid: 90378a6136c0f5f4db6aaca0857b559b, type: 2}
+  _container: {fileID: 11400000, guid: 3431e09d1e215c94998f06a2bbfc6201, type: 2}
   _item: {fileID: 3596183603411433372, guid: 5416be10e2bac484cba07fdb7e971ad9, type: 3}
   _content: {fileID: 515954617}
   _scrollSnap: {fileID: 1116262381}
@@ -6244,7 +6244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &733503923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12775,6 +12775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795981122028748359, guid: 1e90d94cb97b12140ae428d162d547e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5795981122655945440, guid: 1e90d94cb97b12140ae428d162d547e9,
         type: 3}
