@@ -14,7 +14,7 @@ namespace SimpleSolitaire.Controller
 
         public string GetDefault()
         {
-            var defaultVisual = Content.FirstOrDefault(x => x.IsDefault);
+			var defaultVisual = Content.FirstOrDefault(x => x.IsDefault);
             return defaultVisual != null ? defaultVisual.Name : Content.First().Name;
         }
     }

@@ -106,8 +106,10 @@ namespace SimpleSolitaire.Controller
             {
                 Background = GetVisualSettings(Container.BackgroundVisual),
                 CardBack = GetVisualSettings(Container.CardBackVisual),
-                CardFront = GetVisualSettings(Container.CardFrontVisual)
-            };
+				CardFront = "CustomFrontYZ"
+
+				//CardFront = GetVisualSettings(Container.CardFrontVisual)
+			};
         }
 
         /// <summary>
