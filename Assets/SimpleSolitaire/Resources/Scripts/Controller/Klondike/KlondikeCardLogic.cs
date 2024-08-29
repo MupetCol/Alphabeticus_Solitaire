@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using SimpleSolitaire.Model.Config;
 using SimpleSolitaire.Model.Enum;
 using UnityEngine;
@@ -63,6 +65,8 @@ namespace SimpleSolitaire.Controller
                 {
                     base.GenerateRandomCardNums();
                     int replaceAmount = DifficultyReplaceAmount;
+
+
                     int lastReplaceIndex = 0;
                     int bottomDeckCardsCounter = 28;
                     for (int i = CardNumberArray.Length - 1; i > 0; i--)
@@ -106,7 +110,57 @@ namespace SimpleSolitaire.Controller
                         }
                     }
 
-                    break;
+					//test
+					int aces = 2;
+					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
+                    List<int> replacedOnes = new List<int>();   
+
+					for (int i = CardNumberArray.Length - 1; i > 0; i--)
+					{
+						if (aces <= 0)
+						{
+							break;
+						}
+
+                        if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+                        {
+                            //For already replaced aces or aces on valid positions
+                            continue;
+                        }
+
+                      
+						if (CardNumberArray[i] == 0 || CardNumberArray[i] % 13 == 0)
+						{
+							Debug.Log("Found Ace");
+							aces--;
+
+                            int indexToReplace;
+                            while (true)
+                            {
+								indexToReplace = fronPosIndex[UnityEngine.Random.Range(0, fronPosIndex.Length)];
+								if (!replacedOnes.Contains(indexToReplace))
+								{
+									replacedOnes.Add(indexToReplace);
+                                    break;
+								}
+							}
+
+							int currentCardValue = CardNumberArray[i];
+							int cardForReplaceValue = CardNumberArray[indexToReplace];
+
+                                Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
+                                    "with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);
+
+							CardNumberArray[indexToReplace] = currentCardValue;
+							CardNumberArray[i] = cardForReplaceValue;
+
+							/* Test debug.
+							Debug.LogError($"lastReplaceIndex {lastReplaceIndex} replaceAmount {replaceAmount} Replace {currentCardValue} with {cardForReplaceValue} ");
+							*/
+						}
+					}
+
+					break;
                 }
             }
         }

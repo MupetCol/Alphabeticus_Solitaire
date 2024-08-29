@@ -187,12 +187,12 @@ namespace SimpleSolitaire.Controller
             //    }
             //});
 
-            for (int i = 0; i < AllDeckArray.Length; i++)
-            {
-                Deck targetDeck = AllDeckArray[i];
-                targetDeck.UpdateCardsPosition(false);
-            }
-            HintManagerComponent.UpdateAvailableForDragCards();
+            //for (int i = 0; i < AllDeckArray.Length; i++)
+            //{
+            //    Deck targetDeck = AllDeckArray[i];
+            //    targetDeck.UpdateCardsPosition(false);
+            //}
+            //HintManagerComponent.UpdateAvailableForDragCards();
         }
 
         /// <summary>
