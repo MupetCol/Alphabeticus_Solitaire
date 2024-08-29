@@ -52,6 +52,11 @@ namespace SimpleSolitaire.Controller
             base.InitCardLogic();
         }
 
+        public void SetDifficulty(int difficulty)
+        {
+            CurrentDifficultyType = (KlondikeDifficultyType)difficulty;
+        }
+
         protected override void GenerateRandomCardNums()
         {
             switch (CurrentDifficultyType)
