@@ -6,10 +6,21 @@ using UnityEngine;
 public class UpdateCardLogicResDictionary : MonoBehaviour
 {
     public CardLogic logic;
+    public HintManager hintManager;
 
-    // Update is called once per frame
-    void Update()
-    {
-        logic.InitializeSpacesDictionary();
-    }
+	private float screenWidth, screenHeight;
+
+	// Update is called once per frame
+	private void Start()
+	{
+		screenHeight = Screen.height;
+		screenWidth = Screen.width;
+		
+	}
+
+	private void Update()
+	{
+		logic.InitializeSpacesDictionary();
+		//hintManager.UpdateAvailableForDragCards();
+	}
 }

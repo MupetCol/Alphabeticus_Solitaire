@@ -7406,6 +7406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 404369808}
+  hintManager: {fileID: 418428742}
 --- !u!4 &763281380
 Transform:
   m_ObjectHideFlags: 0
@@ -22383,42 +22384,42 @@ PrefabInstance:
     - target: {fileID: 3128440290305122477, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290305122477, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290305122477, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 443.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290305122477, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290385119160, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290385119160, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290385119160, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 177.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290385119160, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 3128440290385119163, guid: c91c1d1c14ff56d41a4b4f203f2d167b,
         type: 3}

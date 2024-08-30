@@ -190,7 +190,6 @@ namespace SimpleSolitaire.Controller
 
 						if (CardNumberArray[i] == 0 || CardNumberArray[i] % 13 == 0)
 						{
-							Debug.Log("Found Ace");
 							aces--;
 
 							int indexToReplace;
@@ -207,8 +206,8 @@ namespace SimpleSolitaire.Controller
 							int currentCardValue = CardNumberArray[i];
 							int cardForReplaceValue = CardNumberArray[indexToReplace];
 
-							Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
-								"with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);
+							/*Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
+								"with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);*/
 
 							CardNumberArray[indexToReplace] = currentCardValue;
 							CardNumberArray[i] = cardForReplaceValue;
