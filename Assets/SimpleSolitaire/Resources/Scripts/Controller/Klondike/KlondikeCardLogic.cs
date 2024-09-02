@@ -117,6 +117,99 @@ namespace SimpleSolitaire.Controller
                         }
 					}
 
+					int aces = 1;
+					int kings = 1;
+					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
+					List<int> replacedOnes = new List<int>();
+
+					for (int i = CardNumberArray.Length - 1; i > 0; i--)
+					{
+						if (aces <= 0)
+						{
+							break;
+						}
+
+						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						{
+							//For already replaced aces or aces on valid positions
+							continue;
+						}
+
+
+						if (CardNumberArray[i] == 0 || CardNumberArray[i] % 13 == 0)
+						{
+							aces--;
+
+							int indexToReplace;
+							while (true)
+							{
+								indexToReplace = fronPosIndex[UnityEngine.Random.Range(0, fronPosIndex.Length)];
+								if (!replacedOnes.Contains(indexToReplace))
+								{
+									replacedOnes.Add(indexToReplace);
+									break;
+								}
+							}
+
+							int currentCardValue = CardNumberArray[i];
+							int cardForReplaceValue = CardNumberArray[indexToReplace];
+
+							/*Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
+								"with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);*/
+
+							CardNumberArray[indexToReplace] = currentCardValue;
+							CardNumberArray[i] = cardForReplaceValue;
+
+							/* Test debug.
+							Debug.LogError($"lastReplaceIndex {lastReplaceIndex} replaceAmount {replaceAmount} Replace {currentCardValue} with {cardForReplaceValue} ");
+							*/
+						}
+					}
+
+					for (int i = CardNumberArray.Length - 1; i > 0; i--)
+					{
+						if (kings <= 0)
+						{
+							break;
+						}
+
+						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						{
+							//For already replaced aces or aces on valid positions
+							continue;
+						}
+
+
+						if (CardNumberArray[i] == 12 || CardNumberArray[i] % 13 == 12)
+						{
+							kings--;
+
+							int indexToReplace;
+							while (true)
+							{
+								indexToReplace = fronPosIndex[UnityEngine.Random.Range(0, fronPosIndex.Length)];
+								if (!replacedOnes.Contains(indexToReplace))
+								{
+									replacedOnes.Add(indexToReplace);
+									break;
+								}
+							}
+
+							int currentCardValue = CardNumberArray[i];
+							int cardForReplaceValue = CardNumberArray[indexToReplace];
+
+							/*Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
+								"with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);*/
+
+							CardNumberArray[indexToReplace] = currentCardValue;
+							CardNumberArray[i] = cardForReplaceValue;
+
+							/* Test debug.
+							Debug.LogError($"lastReplaceIndex {lastReplaceIndex} replaceAmount {replaceAmount} Replace {currentCardValue} with {cardForReplaceValue} ");
+							*/
+						}
+					}
+
 					break;
                 }
 				case KlondikeDifficultyType.Easy:
@@ -169,8 +262,8 @@ namespace SimpleSolitaire.Controller
 						}
 					}
 
-					//test
 					int aces = 2;
+                    int kings = 2;
 					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
 					List<int> replacedOnes = new List<int>();
 
@@ -191,6 +284,50 @@ namespace SimpleSolitaire.Controller
 						if (CardNumberArray[i] == 0 || CardNumberArray[i] % 13 == 0)
 						{
 							aces--;
+
+							int indexToReplace;
+							while (true)
+							{
+								indexToReplace = fronPosIndex[UnityEngine.Random.Range(0, fronPosIndex.Length)];
+								if (!replacedOnes.Contains(indexToReplace))
+								{
+									replacedOnes.Add(indexToReplace);
+									break;
+								}
+							}
+
+							int currentCardValue = CardNumberArray[i];
+							int cardForReplaceValue = CardNumberArray[indexToReplace];
+
+							/*Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
+								"with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);*/
+
+							CardNumberArray[indexToReplace] = currentCardValue;
+							CardNumberArray[i] = cardForReplaceValue;
+
+							/* Test debug.
+							Debug.LogError($"lastReplaceIndex {lastReplaceIndex} replaceAmount {replaceAmount} Replace {currentCardValue} with {cardForReplaceValue} ");
+							*/
+						}
+					}
+
+					for (int i = CardNumberArray.Length - 1; i > 0; i--)
+					{
+						if (kings <= 0)
+						{
+							break;
+						}
+
+						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						{
+							//For already replaced aces or aces on valid positions
+							continue;
+						}
+
+
+						if (CardNumberArray[i] == 12 || CardNumberArray[i] % 13 == 12)
+						{
+							kings--;
 
 							int indexToReplace;
 							while (true)
