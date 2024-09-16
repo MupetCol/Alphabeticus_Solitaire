@@ -101,7 +101,7 @@ namespace SimpleSolitaire.Controller
                     _mainSource.PlayOneShot(_moveToPack);
                     break;
                 case AudioType.MoveToAce:
-                    PlayMoveToAceLogic();
+                    //PlayMoveToAceLogic();
                     break;
                 case AudioType.Win:
                     _mainSource.PlayOneShot(_win);
