@@ -118,7 +118,7 @@ namespace SimpleSolitaire.Controller
 					}
 
 					int aces = 1;
-					int kings = 2;
+					int kings = 1;
 					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
 					List<int> replacedOnes = new List<int>();
 
@@ -263,7 +263,7 @@ namespace SimpleSolitaire.Controller
 					}
 
 					int aces = 2;
-                    int kings = 2;
+                    int kings = 1;
 					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
 					List<int> replacedOnes = new List<int>();
 
