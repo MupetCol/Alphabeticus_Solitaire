@@ -153,7 +153,12 @@ namespace SimpleSolitaire.Controller
                 return;
             }
 
-            switch (Deck.Type)
+			CardLogicComponent.ParticleStars.transform.SetParent(gameObject.transform);
+			CardLogicComponent.ParticleStars.transform.SetAsFirstSibling();
+			CardLogicComponent.ParticleStars.transform.position = new Vector3(transform.position.x,
+					transform.position.y - 20f, transform.position.z);
+
+			switch (Deck.Type)
             {
                 case DeckType.DECK_TYPE_PACK:
                 {

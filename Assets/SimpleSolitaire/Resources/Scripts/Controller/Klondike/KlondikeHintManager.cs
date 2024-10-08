@@ -64,13 +64,24 @@ namespace SimpleSolitaire.Controller
                 _cardLogicComponent.OnDragEnd(hintCard);
             }
 
-            IsHintProcess = false;
+			StartCoroutine(ActivateParticle());
+
+			IsHintProcess = false;
         }
-        
-        /// <summary>
-        /// Generate new hint depending on available for move cards.
-        /// </summary>
-        protected override void GenerateHints(bool isAutoComplete = false)
+
+		private IEnumerator ActivateParticle()
+		{
+
+			_cardLogicComponent.ParticleStars.Play();
+			yield return new WaitForSeconds(0.2f);
+			_cardLogicComponent.ParticleStars.Stop();
+		}
+
+
+		/// <summary>
+		/// Generate new hint depending on available for move cards.
+		/// </summary>
+		protected override void GenerateHints(bool isAutoComplete = false)
         {
             CurrentHintIndex = 0;
             AutoCompleteHints = new List<HintElement>();
