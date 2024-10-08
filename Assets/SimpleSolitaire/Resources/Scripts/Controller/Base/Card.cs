@@ -75,9 +75,11 @@ namespace SimpleSolitaire.Controller
         /// <returns></returns>
         private IEnumerator ActivateParticle()
         {
-            yield return new WaitForSeconds(0.1f);
+            
             CardLogicComponent.ParticleStars.Play();
-        }
+			yield return new WaitForSeconds(0.2f);
+			CardLogicComponent.ParticleStars.Stop();
+		}
 
         public void OnBeginDrag(PointerEventData eventData)
         {
@@ -95,9 +97,10 @@ namespace SimpleSolitaire.Controller
             CardLogicComponent.ParticleStars.transform.SetParent(gameObject.transform);
             CardLogicComponent.ParticleStars.transform.SetAsFirstSibling();
 
-            _coroutine = ActivateParticle();
-            StartCoroutine(_coroutine);
-        }
+			if (_coroutine != null)
+				StopCoroutine(_coroutine);
+			CardLogicComponent.ParticleStars.Stop();
+		}
 
         public void OnDrag(PointerEventData eventData)
         {
@@ -130,9 +133,12 @@ namespace SimpleSolitaire.Controller
             transform.SetSiblingIndex(IndexZ);
             _lastMousePosition = Vector3.zero;
 
-            if (_coroutine != null)
+			if (_coroutine != null)
                 StopCoroutine(_coroutine);
-            CardLogicComponent.ParticleStars.Stop();
+			_coroutine = ActivateParticle();
+			StartCoroutine(_coroutine);
+			Debug.Log("Trying to play particles");
+    
 
             await CardLogicComponent.OnDragEnd(this);
             _deck.UpdateCardsPosition(false);
