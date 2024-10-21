@@ -118,7 +118,7 @@ namespace SimpleSolitaire.Controller
 					}
 
 					int aces = 2;
-					int kings = 1;
+					int kings = 2;
 					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
 					List<int> replacedOnes = new List<int>();
 
@@ -262,7 +262,7 @@ namespace SimpleSolitaire.Controller
 						}
 					}
 
-					int aces = 2;
+					int aces = 3;
                     int kings = 2;
 					int[] fronPosIndex = { 51, 49, 46, 42, 37, 31, 24 };
 					List<int> replacedOnes = new List<int>();
@@ -349,6 +349,46 @@ namespace SimpleSolitaire.Controller
 							CardNumberArray[indexToReplace] = currentCardValue;
 							CardNumberArray[i] = cardForReplaceValue;
 
+							/* Test debug.
+							Debug.LogError($"lastReplaceIndex {lastReplaceIndex} replaceAmount {replaceAmount} Replace {currentCardValue} with {cardForReplaceValue} ");
+							*/
+						}
+					}
+
+					for (int i = CardNumberArray.Length - 1; i > 0; i--)
+					{
+
+						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						{
+							//For already replaced aces or aces on valid positions
+							continue;
+						}
+
+
+						if (CardNumberArray[i] == 6 || CardNumberArray[i] % 13 == 6)
+						{
+
+							int indexToReplace;
+							while (true)
+							{
+								indexToReplace = fronPosIndex[UnityEngine.Random.Range(0, fronPosIndex.Length)];
+								if (!replacedOnes.Contains(indexToReplace))
+								{
+									replacedOnes.Add(indexToReplace);
+									break;
+								}
+							}
+
+							int currentCardValue = CardNumberArray[i];
+							int cardForReplaceValue = CardNumberArray[indexToReplace];
+
+							/*Debug.Log("Replacing index " + i + "which is ace with value of" + CardNumberArray[i] +
+								"with index " + indexToReplace + "with value of " + CardNumberArray[indexToReplace]);*/
+
+							CardNumberArray[indexToReplace] = currentCardValue;
+							CardNumberArray[i] = cardForReplaceValue;
+
+                            break;
 							/* Test debug.
 							Debug.LogError($"lastReplaceIndex {lastReplaceIndex} replaceAmount {replaceAmount} Replace {currentCardValue} with {cardForReplaceValue} ");
 							*/
