@@ -64,7 +64,8 @@ namespace SimpleSolitaire.Controller
                 _cardLogicComponent.OnDragEnd(hintCard);
             }
 
-			StartCoroutine(ActivateParticle());
+			if ( data.Type != HintType.Hint)
+				StartCoroutine(ActivateParticle());
 
 			IsHintProcess = false;
         }
