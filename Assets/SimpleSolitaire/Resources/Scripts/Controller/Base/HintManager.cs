@@ -37,7 +37,7 @@ namespace SimpleSolitaire.Controller
         protected CardLogic _cardLogicComponent;
 
         [SerializeField] private AutoCompleteManager _autoCompleteComponent;
-        [SerializeField] private InterVideoAds _adsManager;
+        //[SerializeField] private InterVideoAds _adsManager;
         [SerializeField] private Button _hintButton;
 
         [Header("Hint data: ")] public List<Card> IsAvailableForMoveCardArray = new List<Card>();

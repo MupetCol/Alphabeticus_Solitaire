@@ -40,8 +40,8 @@ namespace SimpleSolitaire.Controller
         [Header("Components:")]
         [SerializeField]
         protected CardLogic _cardLogic;
-        [SerializeField]
-        private InterVideoAds _interVideoAdsComponent;
+        //[SerializeField]
+        //private InterVideoAds _interVideoAdsComponent;
         [SerializeField]
         private CongratulationManager _congratManagerComponent;
         [SerializeField]
@@ -148,7 +148,7 @@ namespace SimpleSolitaire.Controller
             _autoCompleteEnable = true;
             _isBarActive = true;
 
-            InterVideoAds.RewardAction += OnRewardActionState;
+            //InterVideoAds.RewardAction += OnRewardActionState;
 
             _cardLogic.SubscribeEvents();
             _audioController = AudioController.Instance;
@@ -273,7 +273,7 @@ namespace SimpleSolitaire.Controller
 
         private void OnDestroy()
         {
-            InterVideoAds.RewardAction -= OnRewardActionState;
+            //InterVideoAds.RewardAction -= OnRewardActionState;
             _cardLogic.UnsubscribeEvents();
         }
 
@@ -296,10 +296,10 @@ namespace SimpleSolitaire.Controller
         /// </summary>
         private void InitSettingBtns()
         {
-            if (PlayerPrefs.HasKey(_interVideoAdsComponent.NoAdsKey))
+           /* if (PlayerPrefs.HasKey(_interVideoAdsComponent.NoAdsKey))
             {
                 AdsBtn.SetActive(false);
-            }
+            }*/
         }
 
         /// <summary>
@@ -553,6 +553,7 @@ namespace SimpleSolitaire.Controller
         /// </summary>
         public void OnWatchAdsBtnClick()
         {
+            /*
             switch (_currentAdsType)
             {
                 case RewardAdsType.GetUndo:
@@ -561,7 +562,7 @@ namespace SimpleSolitaire.Controller
                 case RewardAdsType.NoAds:
                     _interVideoAdsComponent.NoAdsAction();
                     break;
-            }
+            }*/
         }
 
         /// <summary>

@@ -5033,7 +5033,6 @@ MonoBehaviour:
   GetUndoAdsInfoText: DO YOU WANNA GET FREE UNDO COUNTS? JUST WATCH REWARD VIDEO
     AND INSTALL APP. THEN UNDO WILL ADDED TO YOUR GAME SESSION!
   _cardLogic: {fileID: 404369808}
-  _interVideoAdsComponent: {fileID: 2056229144}
   _congratManagerComponent: {fileID: 726813790}
   _undoPerformComponent: {fileID: 1008506454}
   _autoCompleteComponent: {fileID: 1543854655}
@@ -5121,7 +5120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardLogicComponent: {fileID: 404369808}
   _autoCompleteComponent: {fileID: 1543854655}
-  _adsManager: {fileID: 2056229144}
   _hintButton: {fileID: 1288002045}
   IsAvailableForMoveCardArray: []
   Hints: []
@@ -22670,15 +22668,23 @@ MonoBehaviour:
     InterId: 
     RewardId: 
     BannerId: 
+  _interId: 
+  _rewardId: 
+  _bannerId: 
   _intersitialRepeatCall: 0
   _intersitialCallsBorder: 3
   _firstCallIntersitialTime: 5
   _repeatIntersitialTime: 80
+  _intersitialCallsCounter: 0
+  _requestAdmob: {}
   _isTestADS: 1
   _isBanner: 1
   _isIntersitial: 1
   _isReward: 1
   _isHandeldAction: 0
+  _lastShowingType: 0
+  _lastRewardVideoStatus: 0
+  _isRewarded: 0
 --- !u!1001 &2063176050
 PrefabInstance:
   m_ObjectHideFlags: 0
