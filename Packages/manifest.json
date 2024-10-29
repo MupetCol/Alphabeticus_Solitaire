@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.febucci.custom-hierarchy": "https://github.com/febucci/unitypackage-custom-hierarchy.git",
-    "com.google.ads.mobile": "9.1.0",
     "com.google.external-dependency-manager": "1.2.179",
     "com.unity.collab-proxy": "2.4.4",
     "com.unity.device-simulator.devices": "1.0.0",

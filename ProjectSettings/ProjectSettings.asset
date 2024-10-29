@@ -1007,10 +1007,14 @@ PlayerSettings:
     Build: 0
     Collab: 0
     ErrorHub: 0
+    Game Performance: 0
     Game_Performance: 0
     Hub: 0
+    Legacy Analytics: 0
     Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
     Unity_Ads: 0
   luminIcon:
     m_Name: 
@@ -1031,11 +1035,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: d00a6624-e65d-47d2-b5e4-482dd2155455
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SimpleSolitaire
-  organizationId: 
+  projectName: U.AlphabeticusSolitaire
+  organizationId: unity_m8qukc3hvh4hza
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   hmiLoadingImage: {fileID: 0}
