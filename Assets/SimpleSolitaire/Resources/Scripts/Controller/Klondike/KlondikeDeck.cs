@@ -9,6 +9,10 @@ namespace SimpleSolitaire.Controller
         /// Update card position in game by solitaire style
         /// </summary>
         /// <param name="firstTime">If it first game update</param>
+        /// 
+
+        [SerializeField] private bool mobile;
+
         public override void UpdateCardsPosition(bool firstTime)
         {
             for (int i = 0; i < CardsArray.Count; i++)
@@ -33,29 +37,59 @@ namespace SimpleSolitaire.Controller
                         
                         card.IsDraggable = false;
                         card.gameObject.transform.position = gameObject.transform.position;
-                        if (CardsArray.Count == 2)
+
+                        if (mobile)
                         {
-                            if (i == 1)
-                            {
-                                card.gameObject.transform.position = gameObject.transform.position -
-                                                                     new Vector3(0, wasteHorizontalSpace, 0);
-                                card.IsDraggable = true;
-                            }
+							if (CardsArray.Count == 2)
+							{
+								if (i == 1)
+								{
+									card.gameObject.transform.position = gameObject.transform.position -
+																		 new Vector3(wasteHorizontalSpace, 0, 0);
+									card.IsDraggable = true;
+								}
+							}
+							else if (CardsArray.Count >= 3)
+							{
+								if (i == CardsArray.Count - 1)
+								{
+									card.gameObject.transform.position = gameObject.transform.position -
+																		 new Vector3(2 * wasteHorizontalSpace, 0 , 0);
+									card.IsDraggable = true;
+								}
+								else if (i == CardsArray.Count - 2)
+								{
+									card.gameObject.transform.position = gameObject.transform.position -
+																		 new Vector3(wasteHorizontalSpace, 0, 0);
+								}
+							}
                         }
-                        else if (CardsArray.Count >= 3)
+                        else
                         {
-                            if (i == CardsArray.Count - 1)
-                            {
-                                card.gameObject.transform.position = gameObject.transform.position -
-                                                                     new Vector3(0, 2 * wasteHorizontalSpace, 0);
-                                card.IsDraggable = true;
-                            }
-                            else if (i == CardsArray.Count - 2)
-                            {
-                                card.gameObject.transform.position = gameObject.transform.position -
-                                                                     new Vector3(0, wasteHorizontalSpace, 0);
-                            }
-                        }
+							if (CardsArray.Count == 2)
+							{
+								if (i == 1)
+								{
+									card.gameObject.transform.position = gameObject.transform.position -
+																		 new Vector3(0, wasteHorizontalSpace, 0);
+									card.IsDraggable = true;
+								}
+							}
+							else if (CardsArray.Count >= 3)
+							{
+								if (i == CardsArray.Count - 1)
+								{
+									card.gameObject.transform.position = gameObject.transform.position -
+																		 new Vector3(0, 2 * wasteHorizontalSpace, 0);
+									card.IsDraggable = true;
+								}
+								else if (i == CardsArray.Count - 2)
+								{
+									card.gameObject.transform.position = gameObject.transform.position -
+																		 new Vector3(0, wasteHorizontalSpace, 0);
+								}
+							}
+						}
                     }
 
                     if (i == CardsArray.Count - 1)
