@@ -4864,7 +4864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -24.99997}
+  m_AnchoredPosition: {x: 0, y: -25}
   m_SizeDelta: {x: 0, y: -25}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &404369808
@@ -4985,6 +4985,7 @@ MonoBehaviour:
   DifficultyReplaceAmount: 16
   _oneDrawRuleToggle: {fileID: 1294817996}
   _threeDrawRuleToggle: {fileID: 1204108703}
+  _mobile: 0
 --- !u!1 &411655881
 GameObject:
   m_ObjectHideFlags: 0
@@ -5027,7 +5028,6 @@ MonoBehaviour:
   GetUndoAdsInfoText: DO YOU WANNA GET FREE UNDO COUNTS? JUST WATCH REWARD VIDEO
     AND INSTALL APP. THEN UNDO WILL ADDED TO YOUR GAME SESSION!
   _cardLogic: {fileID: 404369808}
-  _interVideoAdsComponent: {fileID: 2056229144}
   _congratManagerComponent: {fileID: 726813790}
   _undoPerformComponent: {fileID: 1008506454}
   _autoCompleteComponent: {fileID: 1543854655}
@@ -5115,7 +5115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardLogicComponent: {fileID: 404369808}
   _autoCompleteComponent: {fileID: 1543854655}
-  _adsManager: {fileID: 2056229144}
   _hintButton: {fileID: 1288002045}
   IsAvailableForMoveCardArray: []
   Hints: []
@@ -6275,8 +6274,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: AB CD EF GH IJ KL MN OP QR ST UV WX YZ
 --- !u!222 &566755033
