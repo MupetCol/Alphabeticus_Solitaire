@@ -131,7 +131,7 @@ namespace SimpleSolitaire.Controller
 							break;
 						}
 
-						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						if (replacedOnes.Contains(i))
 						{
 							//For already replaced aces or aces on valid positions
 							continue;
@@ -175,7 +175,7 @@ namespace SimpleSolitaire.Controller
 							break;
 						}
 
-						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						if (replacedOnes.Contains(i))
 						{
 							//For already replaced aces or aces on valid positions
 							continue;
@@ -276,7 +276,7 @@ namespace SimpleSolitaire.Controller
 							break;
 						}
 
-						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						if (replacedOnes.Contains(i))
 						{
 							//For already replaced aces or aces on valid positions
 							continue;
@@ -297,6 +297,8 @@ namespace SimpleSolitaire.Controller
 									break;
 								}
 							}
+
+							Debug.Log("Ace replaced " + aces + " at index " + indexToReplace);
 
 							int currentCardValue = CardNumberArray[i];
 							int cardForReplaceValue = CardNumberArray[indexToReplace];
@@ -320,7 +322,7 @@ namespace SimpleSolitaire.Controller
 							break;
 						}
 
-						if (replacedOnes.Contains(i) || fronPosIndex.Contains(i))
+						if (replacedOnes.Contains(i))
 						{
 							//For already replaced aces or aces on valid positions
 							continue;
