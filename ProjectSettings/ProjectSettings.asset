@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Alphabeticus
-  productName: Alphabeticus Solitaire
+  productName: AlphabeticusSolitaire
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.9960785, g: 0.69411767, b: 0.023529414, a: 1}
@@ -159,7 +159,7 @@ PlayerSettings:
     Android: com.Alphabeticus.AlphabeticusSolitaire
     Standalone: com.DefaultCompany.U.AlphabeticusSolitaire
     Tizen: com.leveltek.SimpleSolitaire
-    iPhone: com.Alphabeticus.Alphabeticus-Solitaire
+    iPhone: com.leveltek.SimpleSolitaire
     tvOS: com.leveltek.SimpleSolitaire
   buildNumber:
     Standalone: 0
