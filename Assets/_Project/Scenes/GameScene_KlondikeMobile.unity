@@ -7016,7 +7016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Container: {fileID: 11400000, guid: 4ce9a866bf86d2c4e9cf0a686af976d1, type: 2}
-  BackgroundsContainer: {fileID: 0}
+  BackgroundsContainer: {fileID: 1057673481}
   CardBacksContainer: {fileID: 0}
   CardFrontsContainer: {fileID: 0}
   GameBG: {fileID: 195708251}
@@ -11362,6 +11362,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046557373}
   m_CullTransparentMesh: 1
+--- !u!224 &1057673481 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2210395324700830135, guid: 113281478ac2fbe4280a41a87a6b083d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1152049207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1104994133
 GameObject:
   m_ObjectHideFlags: 0
@@ -14395,7 +14401,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2210395325591244626, guid: 113281478ac2fbe4280a41a87a6b083d, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2210395324769136288, guid: 113281478ac2fbe4280a41a87a6b083d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1050665452895983176, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
@@ -20275,7 +20282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b543eb2fc0633d4986901da583f53fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundSwitchBtn: {fileID: 2210395324594663268}
+  soundSwitchBtn: {fileID: 0}
 --- !u!4 &1758768097
 Transform:
   m_ObjectHideFlags: 0
