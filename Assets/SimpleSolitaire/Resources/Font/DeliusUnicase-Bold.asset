@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: DeliusUnicase-Bold
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 1646612748
   material: {fileID: 1653861629349404643}
-  materialHashCode: 0
+  materialHashCode: -117657556
   m_Version: 1.1.0
   m_SourceFontFileGUID: 3a93b189a775a0d47ba75968fb7d4ebd
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 3a93b189a775a0d47ba75968fb7d4ebd,

@@ -6,9 +6,15 @@ public class SongStateHandler : MonoBehaviour
 {
     private AudioSource source;
 	private float maxVolume;
+    public static SongStateHandler instance;
 
 	private void Awake()
 	{
+		if(instance == null) instance = this;
+		else Destroy(this.gameObject);
+
+		DontDestroyOnLoad(this.gameObject);
+
 		source = GetComponent<AudioSource>();
 	}
 

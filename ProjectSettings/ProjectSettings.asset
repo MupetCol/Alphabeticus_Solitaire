@@ -159,7 +159,7 @@ PlayerSettings:
     Android: com.Alphabeticus.AlphabeticusSolitaire
     Standalone: com.DefaultCompany.U.AlphabeticusSolitaire
     Tizen: com.leveltek.SimpleSolitaire
-    iPhone: com.leveltek.SimpleSolitaire
+    iPhone: com.Alphabeticus.AlphabeticusSolitaire
     tvOS: com.leveltek.SimpleSolitaire
   buildNumber:
     Standalone: 0
