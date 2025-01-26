@@ -20282,7 +20282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b543eb2fc0633d4986901da583f53fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundSwitchBtn: {fileID: 0}
+  soundSwitchBtn: {fileID: 2210395324594663268}
 --- !u!4 &1758768097
 Transform:
   m_ObjectHideFlags: 0
