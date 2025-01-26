@@ -261,8 +261,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/CurrentProjects/Alphabet Solitaire/Keys/user.keystore
-  AndroidKeyaliasName: androidkey
+  AndroidKeystoreName: E:/ProjectFiles/Alphabet Solitaire/Keys/user2.keystore
+  AndroidKeyaliasName: general
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
