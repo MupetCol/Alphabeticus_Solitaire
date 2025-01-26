@@ -9,4 +9,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+
+    public void LoadGamesURL()
+    {
+        Application.OpenURL("https://alphabeticus.com/product/a2z-card-game/");
+    }
 }

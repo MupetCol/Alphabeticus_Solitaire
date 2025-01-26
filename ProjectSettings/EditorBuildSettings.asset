@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/GameScene_KlondikePC.unity
     guid: 36030bcb266689f46be47e4cceaf4dde
   - enabled: 1
-    path: Assets/_Project/Scenes/GameScene_KlondikeMobile.unity
-    guid: bdbad794ead9bdd438439553bee0bce1
-  - enabled: 1
     path: Assets/_Project/Scenes/StartScreen_KlondikeMobile.unity
     guid: 43291b69b4c14d24e8fa1da7fec90d5d
+  - enabled: 1
+    path: Assets/_Project/Scenes/GameScene_KlondikeMobile.unity
+    guid: bdbad794ead9bdd438439553bee0bce1
   m_configObjects: {}
