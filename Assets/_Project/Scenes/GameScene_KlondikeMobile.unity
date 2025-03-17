@@ -6990,7 +6990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &639339669
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7002,7 +7002,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 6aa2ff911a96d4c4b80f9dc5cd3e30f4,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0fdf66603a8062e41b118c7ccf245b0c, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 0fdf66603a8062e41b118c7ccf245b0c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
@@ -13838,35 +13838,40 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 19.8632
       objectReference: {fileID: 0}
+    - target: {fileID: 2210395325591244624, guid: 113281478ac2fbe4280a41a87a6b083d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244625, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244625, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244625, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 257.3
       objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244625, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 148
       objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244625, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 405.15
       objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244625, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -94
       objectReference: {fileID: 0}
     - target: {fileID: 2210395325591244626, guid: 113281478ac2fbe4280a41a87a6b083d,
         type: 3}
@@ -20685,7 +20690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1758768096
 MonoBehaviour:
   m_ObjectHideFlags: 0
